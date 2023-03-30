@@ -7,6 +7,7 @@ const Field = ({ value, onChange }: { value: string, onChange: (value: string) =
 
   useEffect(() => {
     tinymce.init({
+      base_url: '/node_modules/tinymce',
       inline: false,
       // @ts-ignore
       target: target.current,
